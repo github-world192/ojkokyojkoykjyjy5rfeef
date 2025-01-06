@@ -8,11 +8,3 @@ struct ContentView: View {
     }
 }
 
-@main
-struct NumberListApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
