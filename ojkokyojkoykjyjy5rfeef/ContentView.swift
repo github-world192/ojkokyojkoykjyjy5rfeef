@@ -1,24 +1,18 @@
-//
-//  ContentView.swift
-//  ojkokyojkoykjyjy5rfeef
-//
-//  Created by dillen on 2025/1/6.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(1...100, id: \.self) { number in
+            Text("\(number)")
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+@main
+struct NumberListApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
 }
